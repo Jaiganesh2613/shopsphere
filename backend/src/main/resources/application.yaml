@@ -1,0 +1,23 @@
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/shopsphere
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  secret: E5fGaIeo6vmXF0EljfQbvSGixWnq50fbg6L63dXW+c4=
+  expiration: 900000
+
+#logging:
+#  level:
+#    org.springframework.security: TRACE
